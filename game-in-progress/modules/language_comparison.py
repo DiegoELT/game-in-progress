@@ -1,13 +1,17 @@
 import nltk
 import string
 import numpy as np
+import configparser
 
 from nltk import word_tokenize
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
 from unidecode import unidecode
 
-nltk.data.path.append('/Users/diegolinares/Documents/mastersDegree/classes/engineeringOfAI/assignment6/game-in-progress/nltk_data')
+config = configparser.ConfigParser()
+config.read('config.ini')
+
+nltk.data.path.append('nltk_data')
 
 def pre_process(corpus, n = 20):
   corpus = corpus.lower()
