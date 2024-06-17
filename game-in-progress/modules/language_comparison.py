@@ -1,15 +1,11 @@
 import nltk
 import string
 import numpy as np
-import configparser
 
 from nltk import word_tokenize
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
 from unidecode import unidecode
-
-config = configparser.ConfigParser()
-config.read('config.ini')
 
 nltk.data.path.append('nltk_data')
 
