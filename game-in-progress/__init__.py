@@ -92,7 +92,7 @@ def create_app(test_config = None):
         {
           'name': game['info']['name'],
           'app_id': game['info']['app_id'],
-          'score': round(game['score'] * 100, 2)
+          'score': round(game['score'] * 100 + 50, 2)
         }
       )
 
