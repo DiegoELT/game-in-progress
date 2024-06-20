@@ -7,7 +7,7 @@ from .modules.steam_reviews import get_reviews
 from .modules.depth_scraper import get_similar_games
 from gensim.models import KeyedVectors
 
-model_path = '/Users/diegolinares/Documents/mastersDegree/classes/engineeringOfAI/assignment6/game-in-progress/google_model.bin'
+model_path = './google_model.bin'
 
 def create_app(test_config = None):
   app = Flask(__name__, instance_relative_config = True)
