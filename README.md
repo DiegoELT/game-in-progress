@@ -35,7 +35,7 @@ $ pip install -r requirements.txt
 With Flask installed, and the `.csv` downloaded you can create the SQLite3 instance for the project.
 
 ```
-$ flask --app game-in-progress init-db 
+$ python -m flask --app game-in-progress init-db 
 $ sqlite3 instance/game-in-progress.sqlite
 sqlite> .mode csv
 sqlite> .import <route_to_basic_db> game
@@ -46,7 +46,7 @@ sqlite> .import <route_to_basic_db> game
 After that you should be able to run the project with:
 
 ```
-$ flask --app game-in-progress run --debug
+$ python -m flask --app game-in-progress run --debug
 ```
 
 Find the games that you enjoy!
